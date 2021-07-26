@@ -8,7 +8,7 @@ before_install:
   - docker build -t kpl5672/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-# run test
+# run test here
   - docker run -e CI=true kpl5672/react-test npm test
 
 after_success:
